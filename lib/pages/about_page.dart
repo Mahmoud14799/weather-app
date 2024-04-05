@@ -23,7 +23,10 @@ class AboutPage extends StatelessWidget {
             SizedBox(height: 10),
             Text(
               '  Mahmoud Badawy.',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.purple),
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple),
             ),
             SizedBox(height: 10),
             Text(

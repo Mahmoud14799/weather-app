@@ -20,10 +20,11 @@ class HomePageWeather extends StatelessWidget {
                 Navigator.pushNamed(context, 'search_page');
               },
               style: ElevatedButton.styleFrom(
-                primary: Colors.blue, // تغيير لون الخلفية
-                onPrimary: Colors.white, // تغيير لون النص
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.blue, // تغيير لون النص
                 textStyle: const TextStyle(fontSize: 20), // تغيير حجم النص
-                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40), // تغيير هوامش الزر
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20, horizontal: 40), // تغيير هوامش الزر
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30), // تغيير شكل الزر
                 ),
@@ -37,16 +38,17 @@ class HomePageWeather extends StatelessWidget {
                 Navigator.pushNamed(context, 'History_page');
               },
               style: ElevatedButton.styleFrom(
-                primary: Colors.orange, // تغيير لون الخلفية
-                onPrimary: Colors.white, // تغيير لون النص
-                textStyle: const TextStyle(fontSize: 20), // تغيير حجم النص
-                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40), // تغيير هوامش الزر
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.orange, 
+                textStyle: const TextStyle(fontSize: 20), 
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20, horizontal: 40), 
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30), // تغيير شكل الزر
+                  borderRadius: BorderRadius.circular(30),
                 ),
-                elevation: 3, // تغيير الرفعة الظلية للزر
+                elevation: 3,
               ),
-              child: const Text('بحث في التاريخ'), // تغيير نص الزر
+              child: const Text('بحث في التاريخ'), 
             ),
             const SizedBox(height: 20),
             ElevatedButton(
@@ -54,10 +56,11 @@ class HomePageWeather extends StatelessWidget {
                 Navigator.pushNamed(context, 'about_page');
               },
               style: ElevatedButton.styleFrom(
-                primary: Colors.purple, // تغيير لون الخلفية
-                onPrimary: Colors.white, // تغيير لون النص
+                foregroundColor: Colors.white,
+                backgroundColor: Colors.purple, // تغيير لون النص
                 textStyle: const TextStyle(fontSize: 20), // تغيير حجم النص
-                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40), // تغيير هوامش الزر
+                padding: const EdgeInsets.symmetric(
+                    vertical: 20, horizontal: 40), // تغيير هوامش الزر
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30), // تغيير شكل الزر
                 ),

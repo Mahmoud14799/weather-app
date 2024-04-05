@@ -25,7 +25,7 @@ class HistoryPage extends StatelessWidget {
       body: ListView.separated(
         itemCount: cityNameList!.length,
         itemBuilder: ((context, index) {
-          final cityName = cityNameList![index];
+          final cityName = cityNameList[index];
           return ListHistory(
               text: BlocProvider.of<WeatherCubit>(context).cityNameList![index],
               onTap: () {

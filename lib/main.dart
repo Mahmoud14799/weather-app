@@ -11,12 +11,13 @@ void main() {
         create: (context) {
           return WeatherCubit(WeatherService());
         },
-        child:  WeatherApp(appRouter: AppRouter(),)),
+        child: WeatherApp(
+          appRouter: AppRouter(),
+        )),
   );
 }
 
 class WeatherApp extends StatelessWidget {
-  
   final AppRouter appRouter;
 
   const WeatherApp({Key? key, required this.appRouter}) : super(key: key);
@@ -27,7 +28,6 @@ class WeatherApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'weather_app',
       home: HomePage(),
-
       onGenerateRoute: appRouter.generatRouter,
     );
   }

@@ -14,15 +14,13 @@ class WeatherCubit extends Cubit<WeatherState> {
   void getWeather({required String cityName}) async {
     emit(WeatherLoding());
     if (!cityNameList!.contains(cityName)) {
-    cityNameList!.add(cityName);
-    
-  }
+      cityNameList!.add(cityName);
+    }
 
     try {
       weatherModel = await weatherService.getWeather(cityName: cityName);
 
       emit(WeatherSuccess(weatherModel: weatherModel!));
-      
     } catch (e) {
       emit(WeatherFailure());
     }
@@ -32,7 +30,7 @@ class WeatherCubit extends Cubit<WeatherState> {
 //       {required List<String> cityNameList, required String cityName}) {
 //     for (int i = 0; i < cityNameList.length; i++) {
 //       if (cityNameList[i] != cityName) {
-        
+
 //         return cityNameList.add(cityName);
 //       }
 //     }

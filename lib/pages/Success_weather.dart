@@ -6,7 +6,7 @@ import 'package:weather_app/pages/History_page.dart';
 import 'package:weather_app/pages/search_page.dart';
 
 class SuccessWeather extends StatelessWidget {
-  SuccessWeather({
+  const SuccessWeather({
     this.weatherData,
     Key? key,
   }) : super(key: key);
@@ -31,7 +31,7 @@ class SuccessWeather extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HistoryPage(),
+                      builder: (context) => const HistoryPage(),
                     ));
               },
               icon: const Icon(Icons.history))

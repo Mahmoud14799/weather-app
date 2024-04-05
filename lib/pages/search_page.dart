@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/cubits/Weather_Cubit/weather_cubit.dart';
-import 'package:weather_app/services/weather_service.dart';
 
+// ignore: must_be_immutable
 class SearchPage extends StatelessWidget {
   SearchPage({Key? key}) : super(key: key);
   String? cityName;
@@ -10,8 +10,7 @@ class SearchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          Colors.grey[100], // اللون الأبيض مع درجة خفيفة من الرمادي
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         backgroundColor: Colors.greenAccent,
         title: const Text('Search'),
@@ -35,7 +34,6 @@ class SearchPage extends StatelessWidget {
               label: const Text('search'),
               suffixIcon: GestureDetector(
                   onTap: () async {
-                    WeatherService service = WeatherService();
                     Navigator.of(context).pushNamed('home_page');
                   },
                   child: const Icon(Icons.search)),

@@ -14,12 +14,13 @@ class AppRouter {
       case 'search_page':
         return MaterialPageRoute(builder: (_) => SearchPage());
       case 'success_page':
-        return MaterialPageRoute(builder: ((context) => SuccessWeather()));
+        return MaterialPageRoute(
+            builder: ((context) => const SuccessWeather()));
       case 'Home_Page_Weather':
         return MaterialPageRoute(builder: (_) => const HomePageWeather());
       case 'History_page':
         return MaterialPageRoute(builder: (_) => const HistoryPage());
-        case 'about_page':
+      case 'about_page':
         return MaterialPageRoute(builder: (_) => const AboutPage());
       default:
         throw Exception('Invalid route: ${settings.name}');
