@@ -21,8 +21,6 @@ class HomePage extends StatelessWidget {
           return const Center(child: CircularProgressIndicator());
         } else if (state is WeatherSuccess) {
           return SuccessWeather(weatherData: state.weatherModel);
-          // } else if (state is BackToSearch) {
-          //   return SuccessWeather(weatherData: state.weatherModel);
         } else if (state is WeatherFailure) {
           return const Center(
               child: Text('somesthing went wrong please try again   ⚠️  ⚠️'));
